@@ -51,7 +51,7 @@ impl GpnTronBot for DemoBot {
                 self.ticks += 1;
                 self.direction = self.choose_direction(bot);
                 if self.ticks == 1 {
-                    bot.chat("gpn-tron on crates.io");
+                    bot.chat("Demo bot. gpn-tron on crates.io");
                 }
                 bot.do_move(self.direction);
             }
