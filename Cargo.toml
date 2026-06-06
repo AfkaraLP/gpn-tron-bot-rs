@@ -1,0 +1,20 @@
+[package]
+name = "gpn-tron"
+version = "0.1.0"
+edition = "2024"
+description = "Rust client library for the GPN Tron game (built for GPN 24, Karlsruhe)."
+repository = "https://github.com/AfkaraLP/gpn-tron-bot-rs"
+license = "MIT"
+readme = "README.md"
+keywords = ["gpn", "tron", "bot", "game", "tcp"]
+categories = ["games", "network-programming"]
+
+[dependencies]
+thiserror = "2.0.18"
+tokio = { version = "1.52.3", features = ["full"] }
+tokio-stream = "0.1.18"
+tokio-util = { version = "0.7.18", features = ["codec"] }
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
